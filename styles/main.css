@@ -192,3 +192,43 @@ button {
   color: #000000;
   outline: 1px solid var(--primary-color);
 }
+
+/* plants lover section */
+.plants-lover {
+  display: flex;
+  margin-top: 200px;
+  gap: 50px;
+  align-items: center;
+  position: relative;
+}
+.plants-lover-image {
+  max-width: 50%;
+}
+.plants-lover-content {
+  max-width: 50%;
+}
+.plants-lover-content h2 {
+  font-family: var(--secondery-font);
+  font-weight: 700;
+  font-size: 50px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.plants-lover-content ul {
+  flex-direction: column;
+  gap: 20px;
+}
+.plants-lover-content ul li {
+  list-style-type: disc;
+  margin-left: 40px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.plants-lover .badge img {
+  width: 250px;
+  position: absolute;
+  top: -20%;
+  right: 50%;
+}
