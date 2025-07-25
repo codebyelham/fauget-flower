@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: var(--primary-font);
 }
 a {
   text-decoration: none;
@@ -20,7 +21,6 @@ img {
 body {
   width: 100%;
   height: 100%;
-  font-family: var(--primary-font);
   background-color: #f5f8ff;
 }
 button {
@@ -322,4 +322,42 @@ button {
 .zabo:hover {
   transform: translateY(-5px);
   box-shadow: 0px 0px 20px 0px rgba(233, 90, 8, 0.5);
+}
+
+/* join section */
+.join-banner {
+  margin-bottom: 20px;
+  width: 100%;
+  background-image: url(../assets/news-letter-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 0px;
+}
+.join-content {
+  width: 50%;
+  margin: 0 auto;
+}
+.join-content h2 {
+  font-family: var(--secondery-font);
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.join-content .join-subscribe input {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  padding: 15px 20px;
+}
+.join-subscribe .subscribe-btn {
+  padding: 15px 40px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
 }
