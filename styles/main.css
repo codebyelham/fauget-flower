@@ -5,7 +5,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: var(--primary-font);
 }
 a {
   text-decoration: none;
@@ -22,6 +21,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #f5f8ff;
+  font-family: var(--primary-font);
 }
 button {
   cursor: pointer;
@@ -32,7 +32,7 @@ button {
   --secondery-font: 'Noto Serif', serif;
   /* Primary Colors */
   --primary-color: #e95a08;
-  --primary-text-color: #00000050;
+  --primary-text-color: #00000080;
   /* Secondary Colors */
   --secondary-color: #ffffff;
   --secondary-text-color: #8987a1;
@@ -155,6 +155,11 @@ button {
   gap: 30px;
   align-items: center;
   background-color: #ffffff;
+  transition: 0.3s linear;
+}
+.plants-card-container .plants-card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: translateY(-3px);
 }
 .plants-card-container .plants-card .card-img {
   width: 100%;
@@ -231,6 +236,15 @@ button {
   position: absolute;
   top: -20%;
   right: 50%;
+  animation: chorki 15s linear infinite;
+}
+@keyframes chorki {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* latest-deal-section */
@@ -353,6 +367,9 @@ button {
   font-size: 1rem;
   padding: 15px 20px;
 }
+::placeholder {
+  font-family: var(--primary-font);
+}
 .join-subscribe .subscribe-btn {
   padding: 15px 40px;
   background-color: var(--primary-color);
@@ -360,8 +377,11 @@ button {
   font-size: 1rem;
   font-weight: 600;
   border: none;
+  transition: all 0.4s ease;
 }
-
+.join-subscribe .subscribe-btn:hover {
+  background-color: #ce520b;
+}
 /* footer section start here */
 .footer-section {
   padding: 50px 0;
@@ -397,4 +417,10 @@ button {
 }
 .social-icon a img {
   width: 30px;
+  filter: grayscale(100);
+  margin-right: 10px;
+  transition: filter 0.4s ease;
+}
+.social-icon a img:hover {
+  filter: grayscale(0);
 }
