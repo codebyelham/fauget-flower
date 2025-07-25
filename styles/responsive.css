@@ -1,0 +1,135 @@
+/* mobile screen responsive design */
+@media screen and (max-width: 576px) {
+  .nav-items .nav-menu {
+    display: none;
+  }
+  .nav-brand img {
+    width: 90px;
+  }
+  .nav-items .cart-btn {
+    font-size: 20px;
+  }
+  .navigation {
+    padding: 15px;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 70px 0px;
+  }
+  .hero-content {
+    min-width: 90%;
+    margin: 0 auto;
+  }
+  .hero-content h1 {
+    font-size: 1.8rem;
+    margin-top: 15px;
+  }
+  .hero-content p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .hero-image {
+    min-width: 100%;
+  }
+  /* plants section start here*/
+  .content-heading h2 {
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  .content-heading p {
+    font-size: 14px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  /* card */
+  .plants-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 50px auto 0px;
+  }
+  .card-content .card-title {
+    font-size: 1rem;
+  }
+  .card-content .card-price {
+    font-size: 1rem;
+  }
+
+  /* plants lover */
+  .plants-lover {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  .plants-lover-image,
+  .plants-lover-content {
+    max-width: 100%;
+  }
+  .plants-lover .badge img {
+    display: none;
+  }
+  .plants-lover-content h2 {
+    font-size: 24px;
+  }
+  .plants-lover-content ul li {
+    margin-left: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .latest-deal {
+    margin-bottom: 70px;
+  }
+  .flower-card-container {
+    width: 90%;
+    margin: 50px auto 0px;
+    flex-direction: column;
+  }
+  .right-side .card-content h3 {
+    font-size: 20px;
+  }
+  .right-side .card-content a {
+    font-size: 16px;
+  }
+  .left-side,
+  .right-side {
+    flex: 1;
+  }
+  .zabo {
+    min-height: 200px;
+  }
+  .join-banner {
+    padding: 120px 0px;
+  }
+  .join-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .join-content h2 {
+    font-size: 20px;
+  }
+  .join-subscribe .subscribe-btn {
+    padding: 10px 12px;
+  }
+
+  .footer-section {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: start;
+    row-gap: 20px;
+  }
+  .footer-brand p {
+    font-size: 16px;
+  }
+  .social-icon a img {
+    width: 25px;
+    filter: grayscale(0);
+    margin-right: 15px;
+  }
+}
