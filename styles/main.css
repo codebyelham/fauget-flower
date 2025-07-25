@@ -69,3 +69,85 @@ button {
 .text-orange {
   color: var(--primary-color);
 }
+
+/* Navbar */
+/* ====== navbar ========= */
+.navigation {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+.nav-items,
+.nav-menu {
+  gap: 48px;
+  align-items: center;
+}
+.nav-items .nav-item {
+  display: inline-block;
+}
+.nav-items .nav-item:hover .nav-links,
+.nav-items .nav-item.active .nav-links {
+  color: var(--hover-text-color);
+  transition: color 0.3s ease;
+}
+.nav-item .nav-links {
+  color: var(--secondary-text-color);
+  transition: color 1s ease;
+  font-weight: 600;
+  font-size: 16px;
+}
+.nav-items .cart-btn i {
+  margin-right: 10px;
+}
+/* ====== navbar ========= */
+.navigation {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+.nav-items,
+.nav-menu {
+  gap: 48px;
+  align-items: center;
+}
+.nav-items .nav-item {
+  display: inline-block;
+}
+.nav-items .nav-item:hover .nav-links,
+.nav-items .nav-item.active .nav-links {
+  color: var(--hover-text-color);
+  transition: color 0.3s ease;
+}
+.nav-item .nav-links {
+  color: var(--secondary-text-color);
+  transition: color 1s ease;
+  font-weight: 600;
+  font-size: 16px;
+}
+.nav-items .cart-btn i {
+  margin-right: 10px;
+}
+/* ========= hero ========== */
+.hero {
+  align-items: end;
+  justify-content: space-between;
+  margin: 120px 0px;
+}
+.hero-content {
+  max-width: 50%;
+}
+.hero-content h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  color: #000000;
+}
+.hero-content p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: var(--primary-text-color);
+  margin-top: 15px;
+}
+.hero-image {
+  max-width: 50%;
+}
