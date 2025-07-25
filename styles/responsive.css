@@ -50,11 +50,17 @@
     width: 90%;
     margin: 50px auto 0px;
   }
+  .plants-card-container .plants-card .card-img {
+    height: 160px;
+  }
   .card-content .card-title {
     font-size: 1rem;
   }
   .card-content .card-price {
     font-size: 1rem;
+  }
+  .card-content button {
+    font-size: 14px;
   }
 
   /* plants lover */
