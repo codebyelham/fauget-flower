@@ -361,3 +361,40 @@ button {
   font-weight: 600;
   border: none;
 }
+
+/* footer section start here */
+.footer-section {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: end;
+}
+.footer-brand img {
+  width: 130px;
+}
+.footer-brand p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  margin-top: 15px;
+  color: var(--primary-text-color);
+}
+.footer-menu ul {
+  display: grid;
+  grid-row-gap: 30px;
+}
+.footer-menu ul li {
+  transition: 0.5s ease;
+}
+.footer-menu ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--secondary-text-color);
+  transition: 0.5s ease;
+}
+.footer-menu ul li:hover a {
+  color: #111111;
+}
+.social-icon a img {
+  width: 30px;
+}
